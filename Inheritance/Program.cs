@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 
 namespace Inheritance
 {
@@ -6,34 +7,46 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // TODO Be sure to follow best practice when creating your classes
+            // var robin = new Bird();
+            // robin.Genus = "Erithacus";
+            // robin.Species = "Erithacus rubecula";
+            // robin.IsWarmBlooded = true;
+            // robin.IsEndangered = false;
+            // robin.CanFly = true;
+            // robin.WingSpanCm = 21;
+            // robin.BeakDescription = "short, slender, pointed";
+            // robin.MigrationPattern = "flies to warmer weather for winter";
 
-            // Create a class Animal
-            // give this class 4 members that all Animals have in common
+            var robin = new Bird();
+            robin.Genus = "Erithacus";
+            robin.Species = "Erithacus rubecula";
+            robin.IsWarmBlooded = true;
+            robin.IsEndangered = false;
+            robin.CanFly = true;
+            robin.WingSpanCm = 21;
+            robin.BeakDescription = "short, slender, pointed";
+            robin.MigrationPattern = "flies to warmer weather for winter";
 
+            Console.WriteLine("Robin Facts");
+            Console.WriteLine("---------------------");
+            robin.DisplayInfo();
+            robin.BuildNest();
+            robin.LayEggs();
 
-            // Create a class Bird
-            // give this class 4 members that are specific to Bird
-            // Set this class to inherit from your Animal Class
+            var garterSnake = new Reptile();
+            garterSnake.Genus = "Thamnophis";
+            garterSnake.Species = "Thamnophis elegans";
+            garterSnake.IsWarmBlooded = false;
+            garterSnake.IsEndangered = false;
+            garterSnake.HasLegs = false;
+            garterSnake.IsVenomous = false;
+            garterSnake.HabitatType = "grasslands near water sources";
+            garterSnake.CanRegrowTail = false;
 
-            // Create a class Reptile
-            // give this class 4 members that are specific to Reptile
-            // Set this class to inherit from your Animal Class
-
-
-
-
-            /*Create an object of your Bird class
-             *  give values to your members using the object of your Bird class
-             *  
-             * Creatively display the class member values 
-             */
-
-            /*Create an object of your Reptile class
-             *  give values to your members using the object of your Reptile class
-             *  
-             * Creatively display the class member values 
-             */
+            Console.WriteLine("Garter Snake Facts");
+            Console.WriteLine("---------------------");
+            garterSnake.DisplayInfo();
+            garterSnake.BaskInSun();
         }
     }
 }
