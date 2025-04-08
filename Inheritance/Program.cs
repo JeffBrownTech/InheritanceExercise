@@ -7,16 +7,6 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            // var robin = new Bird();
-            // robin.Genus = "Erithacus";
-            // robin.Species = "Erithacus rubecula";
-            // robin.IsWarmBlooded = true;
-            // robin.IsEndangered = false;
-            // robin.CanFly = true;
-            // robin.WingSpanCm = 21;
-            // robin.BeakDescription = "short, slender, pointed";
-            // robin.MigrationPattern = "flies to warmer weather for winter";
-
             var robin = new Bird();
             robin.Genus = "Erithacus";
             robin.Species = "Erithacus rubecula";
